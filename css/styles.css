@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif; }
+
+body {
+  background-color: white;
+  color: #572EE5; }
+  body.nocturno {
+    background-color: #37383C; }
+
+body.nocturno ul {
+  background-color: #0f0f0f;
+  color: white; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+header {
+  border-top: 5px solid #572EE5;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white; }
+  body.nocturno header {
+    background-color: #37383C;
+    color: white; }
+  header img {
+    margin-left: 5%; }
+  header .crearGifosImg {
+    display: none; }
+  header ul {
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    margin-top: 580px;
+    text-align: center;
+    background-color: #572EE5;
+    opacity: 100%;
+    color: white; }
+    header ul li {
+      margin-top: 20px;
+      padding: 10px 5px; }
+  header .oculto {
+    display: none; }
+  header #btnMenuHamburguesa {
+    font-size: 18px;
+    margin-right: 6%; }
+
+@media (min-width: 1024px) {
+  header .crearGifosImg {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-top: -10px;
+    cursor: pointer; }
+  header #btnMenuHamburguesa {
+    display: none; }
+  header ul {
+    width: auto;
+    position: relative;
+    background: none;
+    color: #572EE5;
+    display: flex;
+    margin: 0;
+    height: 0; }
+    header ul li {
+      margin-top: 0;
+      padding: 0 5px; }
+  header .oculto {
+    display: flex;
+    margin-right: 5%;
+    cursor: pointer; }
+    header .oculto li:hover {
+      text-decoration: underline 2px solid #5ED7C6; }
+    header .oculto li:active {
+      color: #9CAFC3 100%; } }
+.buscador-gif {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10%;
+  align-content: center;
+  align-items: center;
+  margin: auto; }
+  .buscador-gif .formularioBusqueda {
+    border: 1px solid #572EE5;
+    border-radius: 25px;
+    display: flex;
+    height: 30px; }
+  body.nocturno .buscador-gif {
+    color: white; }
+
+.formularioBusqueda {
+  width: 300px;
+  justify-content: space-between; }
+  body.nocturno .formularioBusqueda {
+    border: 1px solid white; }
+    body.nocturno .formularioBusqueda .lupa1 {
+      color: white; }
+    body.nocturno .formularioBusqueda .lupa2 {
+      color: white; }
+    body.nocturno .formularioBusqueda .inputBusqueda {
+      background-color: #37383C; }
+  .formularioBusqueda .lupa1 {
+    display: none;
+    color: #9b9999;
+    margin-left: 6px;
+    margin-top: 4px; }
+
+.lupa2 {
+  color: #572EE5;
+  margin-right: 6px;
+  margin-top: 4px; }
+
+.inputBusqueda {
+  outline: none;
+  margin-left: 13px;
+  width: 220px;
+  border: none; }
+
+.tituloGifos {
+  margin: 0;
+  text-align: center;
+  align-content: center;
+  width: 280px;
+  font-family: Montserrat, bold; }
+  .tituloGifos span {
+    color: #00ffbf; }
+
+.divTrending {
+  display: flexbox;
+  flex-direction: column;
+  text-align: center; }
+  .divTrending .trendingTt {
+    text-align: center;
+    margin-top: 80px;
+    align-self: center;
+    align-items: center; }
+
+.imagenPrincipal {
+  max-width: 65%;
+  height: auto; }
+
+@media (min-width: 1024px) {
+  .imagenPrincipal {
+    max-width: 40%; }
+
+  .formularioBusqueda {
+    width: 480px; } }
+@media (min-width: 768px) {
+  .tituloGifos {
+    width: 380px; } }
+.seccionFavoritos {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 100%;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  padding-top: 60px; }
+  body.nocturno .seccionFavoritos {
+    background-color: #37383C;
+    color: white; }
+
+.contenedorGifFavoritos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100px; }
+  .contenedorGifFavoritos img {
+    margin-top: 60px;
+    margin-bottom: 60px; }
+  .contenedorGifFavoritos .ttGuardaGifos {
+    font-size: 22px;
+    color: #50E3C2;
+    text-align: center;
+    line-height: 33px;
+    margin-bottom: 80px; }
+
+.contenedorFavoritos {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .contenedorFavoritos .ttFavoritos {
+    margin-top: 15px;
+    font-size: 1.8em;
+    font-family: 'Montserrat', sans-serif; }
+
+.resultados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  margin-top: 60px; }
+
+.contenedorTrending .btnVerMas {
+  display: none;
+  padding: 18px;
+  width: 150px;
+  border-radius: 84px;
+  background-color: white;
+  border: 1px solid #572EE5;
+  text-align: center; }
+.contenedorTrending .btnVerMas:hover {
+  background-color: #572EE5;
+  color: white;
+  border-radius: 50; }
+
+.trendingGifos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 100px 0;
+  width: 100%;
+  height: 400px; }
+
+.misGifos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 100px 0;
+  width: 100%;
+  height: 400px;
+  font-family: Montserrat, bold; }
+  body.nocturno .misGifos {
+    background-color: #37383C;
+    color: white; }
+  .misGifos .ttMisGifos {
+    margin-top: 15px;
+    font-size: 1.8em;
+    font-family: 'Montserrat', sans-serif; }
+
+.contenedorDeMisGifos {
+  margin-top: 100px;
+  width: 100%;
+  height: 600px;
+  background-color: white; }
+  body.nocturno .contenedorDeMisGifos {
+    background-color: #37383C;
+    color: white; }
+  .contenedorDeMisGifos p {
+    font-size: 22px;
+    color: #50E3C2;
+    text-align: center;
+    line-height: 33px;
+    margin-bottom: 80px; }
+
+/*# sourceMappingURL=styles.css.map */

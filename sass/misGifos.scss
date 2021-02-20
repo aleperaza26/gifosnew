@@ -1,0 +1,37 @@
+.misGifos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 100px 0;
+    width: 100%;
+    height: 400px;
+    font-family: Montserrat, bold;
+    body.nocturno & {
+        background-color: #37383C;
+        color: white;
+    }
+    .ttMisGifos {
+        margin-top: 15px;
+        font-size: 1.8em;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+.contenedorDeMisGifos {
+    margin-top: 100px;
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    body.nocturno & {
+        background-color: #37383C;
+        color: white;
+    }
+    p {
+        font-size: 22px;
+        color: #50E3C2;
+        text-align: center;
+        line-height: 33px;
+        margin-bottom: 80px;
+    }
+}

@@ -1,0 +1,81 @@
+header {
+    border-top: 5px solid $color-principal;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    body.nocturno & {
+        background-color: #37383C;
+        color: white;
+    }
+    img {
+        margin-left: 5%;
+    }
+    .crearGifosImg {
+        display: none;
+    }
+    ul {
+        width: 100%;
+        height: 80vh;
+        position: absolute;
+        margin-top: 580px;
+        text-align: center;
+        background-color: $color-principal;
+        opacity: 100%;
+        color: white;
+        li {
+            margin-top: 20px;
+            padding: 10px 5px;
+        }
+    }
+    .oculto {
+        display: none;
+    }
+    #btnMenuHamburguesa {
+        font-size: 18px;
+        margin-right: 6%;
+    }
+}
+
+@media(min-width: 1024px) {
+    header {
+        .crearGifosImg {
+            display: block;
+            width: 40px;
+            height: 40px;
+            margin-top: -10px;
+            cursor: pointer;
+        }
+        #btnMenuHamburguesa {
+            display: none;
+        }
+        ul {
+            width: auto;
+            position: relative;
+            background: none;
+            color: $color-principal;
+            display: flex;
+            margin: 0;
+            height: 0;
+            li {
+                margin-top: 0;
+                padding: 0 5px;
+            }
+        }
+        .oculto {
+            display: flex;
+            margin-right: 5%;
+            cursor: pointer;
+            li:hover {
+                text-decoration: underline 2px solid $underline-navbar;
+            }
+            li:active {
+                color: #9CAFC3 100%;
+            }
+        }
+    }
+}

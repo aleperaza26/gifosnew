@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/3bc7d78e54.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="assets/logo-desktop.svg" />
+
+
+    <title>GIFOS by JoseAle</title>
+</head>
+
+<body id="body">
+    <header id="header">
+        <!--Barra Navegación e icono Gifos-->
+        <img src="./assets/logo-mobile.svg" alt=" " class="logoGifos">
+        <div id="btnMenuHamburguesa"> <i class="fas fa-bars" id="iconoHamburguesa"></i></div>
+        <ul class="oculto" id="contendorNav">
+            <li id="btnModoNoc"> Modo Nocturno </li>
+            <li class="menuLine"></li>
+            <li id="btnFavoritos">Favoritos </li>
+            <li class="menuLine"></li>
+            <li id="btnMisGifos">Mis Gifos</li>
+            <li class="menuLine"></li>
+            <li id="btnCrearGifos"><img src="./assets/button-crear-gifo.svg " alt=" " class="crearGifosImg"></li>
+            <!-- Imagen creador de gif -->
+        </ul>
+
+
+
+    </header>
+    <main class="Main ">
+        <section class="buscador-gif " id="buscador-gif">
+            <!--Sección principal-->
+            <h1 class="tituloGifos ">Inspírate, busca, guarda y crea los mejores <span class="spanGifos ">GIFOS</span></h1>
+            <img src="./assets/ilustra_header.svg" class="imagenPrincipal " alt=" ">
+            <div class="contenedorPrincipal" id="contenedorPrincipal">
+                <!--Botones de lupa y equis para la búsqueda + Input-->
+                <form class="formularioBusqueda" id="formularioBusqueda">
+                    <div class="lupa1" id="lupa1"> <i class="fas fa-search"></i>
+                    </div>
+
+                    <input type="text" id="inputBusqueda" autocomplete="off" placeholder="Buscar GIFOS y más" name="search" class="inputBusqueda">
+
+                    <div class="lupa2" id="lupa2">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </form>
+                <div class="trending" id="seccionTrending">
+                    <!--Sección de titulos de trending-->
+                    <div class="divTrending">
+                        <h2 class="trendingTt" id="trendingTt">Trending: </h2>
+                        <p>Aqui van los títulos del trending</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="resultados">
+            <div class="divisorTrending">
+                <!--Línea divisora de sección Trending -->
+            </div>
+            <div class="contenedorTrending">
+
+                <div class="btnVerMas">
+                    Ver Mas
+                    <div>
+                    </div>
+        </section>
+
+        <section class="seccionFavoritos" id="favoritos">
+            <div class="contenedorFavoritos">
+                <!--Seccion Favoritos-->
+                <img src="./assets/icon-favoritos.svg" alt=" " id="corazonFavoritos ">
+                <p class="ttFavoritos">FAVORITOS</p>
+                <!--Corazon pequeño favoritos-->
+                <div class="contenedorGifFavoritos">
+                    <img src="./assets/icon-fav-sin-contenido.svg" alt="">
+                    <!--corazon grande y título-->
+                    <p class="ttGuardaGifos">¡Guarda tu primer GIFO en Favoritos para que se muestre aquí!</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="misGifos">
+            <div class="contenedor_misGifos">
+                <img src="./assets/icon-mis-gifos.svg" alt=" " class="iconoMisGifosPeq">
+                <!--imagen Mis Gifos-->
+                <p class="ttMisGifos">Mis GIFOS</p>
+
+            </div>
+            <div class="contenedorDeMisGifos">
+                <img src="./assets/icon-mis-gifos-sin-contenido.svg" alt=" " class="iconoMisGifosGde">
+                <!--imagen Mis Gifos-->
+                <p>¡Anímate a crear tu primer GIFO!</p>
+
+            </div>
+        </section>
+
+        <section class="crear_gifos">
+            <!--Crear gifos solo Desktop-->
+            <div class="creadorGifos">
+                <div class="contenedor_gifos"></div>
+                <div></div>
+            </div>
+        </section>
+
+        <section>
+        </section>
+        <section class="trendingGifos">
+            <p>Mira los últimos GIFOS de nuestra comunidad</p>
+            <div class="contenedor_trendingGifos">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box4"></div>
+                <div class="sectionTitulos">
+                    <h2 class="tituloMisGifos"></h2>
+                    <p class="parrafoMisGifos"></p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="./JS/Header.js"></script>
+    <script src="./JS/ModoNocturno.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+.resultados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    margin-top: 60px;
+}
+
+.contenedorTrending {
+    .btnVerMas {
+        display: none;
+        padding: 18px;
+        width: 150px;
+        border-radius: 84px;
+        background-color: white;
+        border: 1px solid #572EE5;
+        text-align: center;
+    }
+    .btnVerMas:hover {
+        background-color: $color-principal;
+        color: white;
+        border-radius: 50;
+    }
+}
